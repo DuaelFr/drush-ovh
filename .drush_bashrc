@@ -1,0 +1,5 @@
+export PATH="~/drush:$PATH"
+
+CURDIR=`pwd`
+export DRUSH_PHP="/usr/local/bin/php.ORIG.5.3.16"
+export PHP_OPTIONS="-dallow_call_time_pass_reference= -dmagic_quotes_gpc= -dregister_globals= -dauto_prepend_file=${CURDIR}/drush_prepend.php"
